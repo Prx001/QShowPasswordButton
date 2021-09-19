@@ -60,7 +60,7 @@ class ShowPasswordButton(QPushButton):
 		painter.setBrush(Qt.NoBrush)
 		painter.drawArc(QRect(2, 4, 16, 16), 0 * 16, 180 * 16)
 		painter.drawEllipse(8, 8, 4, 4)
-		if self.enabled:
+		if self._over_line_x != 20 and self._over_line_y != 0:
 			painter.drawLine(20, 0, self._over_line_x, self._over_line_y)
 		painter.end()
 
@@ -95,7 +95,7 @@ class ShowPasswordButton(QPushButton):
 			self.visibilityChanged.emit()
 		elif self.enabled:
 			self.enabled = False
-			self._over_line_x = 20
-			self._over_line_y = 0
-			self.repaint()
+			self.anims.animationAt(0).setEndValue(20)
+			self.anims.animationAt(1).setEndValue(0)
+			self.anims.start()
 			self.visibilityChanged.emit()
