@@ -7,7 +7,7 @@ README = (HERE / "QShowPasswordButton\\README.md").read_text()
 setup(
 	name="QShowPasswordButton",
 	version="1.0.0",
-	description="A customized button to change the visibility of password characters",
+	description="A customized button to change the visibility of password characters for Qt Python binding PyQt (PyQt5)",
 	long_description=README,
 	long_description_content_type="text/markdown",
 	url="https://github.com/Prx001/QShowPasswordButton",
