@@ -20,7 +20,7 @@ setup(
 		"Programming Language :: Python :: 3.9",
 		"Programming Language :: Python :: Implementation :: CPython"
 	],
-	packages=["QSwitchControl"],
+	packages=["QShowPasswordButton"],
 	include_package_data=True,
 	install_requires=["PyQt5"]
 )
