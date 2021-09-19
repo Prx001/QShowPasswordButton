@@ -41,6 +41,8 @@ QLineEdit:focus {
             self.line_edit.setEchoMode(QLineEdit.Normal)
         elif not self.show_password_button.enabled:
             self.line_edit.setEchoMode(QLineEdit.Password)
+        # Or using lambda:
+        # self.show_password_button.visibilityChanged.connect(lambda: self.password_line_edit.setEchoMode(QLineEdit.Normal) if self.show_password_button.enabled else self.password_line_edit.setEchoMode(QLineEdit.Password))
 app = QApplication(sys.argv)
 form = Form()
 sys.exit(app.exec_())
