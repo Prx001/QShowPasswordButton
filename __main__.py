@@ -1,6 +1,5 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLineEdit
-from PyQt5.QtGui import QColor
 from ShowPasswordButton import ShowPasswordButton
 class Form(QWidget):
     def __init__(self):
