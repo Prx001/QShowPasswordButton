@@ -31,8 +31,7 @@ QLineEdit:focus {
 }""")
         self.line_edit.resize(200, 40)
         self.line_edit.move(20, 20)
-        self.show_password_button = ShowPasswordButton(self, bg_color=QColor(0, 0, 0, 0), hover_bg_color=QColor(199, 199, 199),
-	             press_bg_color=QColor(179, 179, 179))
+        self.show_password_button = ShowPasswordButton(self)
         self.show_password_button.move(194, 29)
         self.show_password_button.visibilityChanged.connect(self.change_visibility)
         self.show()

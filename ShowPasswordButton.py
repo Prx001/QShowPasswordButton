@@ -6,7 +6,7 @@ from PyQt5.QtGui import QPainter, QPen, QBrush, QColor
 class ShowPasswordButton(QPushButton):
 	visibilityChanged = pyqtSignal()
 
-	def __init__(self, parent, bg_color=QColor(217, 217, 217), hover_bg_color=QColor(199, 199, 199),
+	def __init__(self, parent, bg_color=QColor(0, 0, 0, 0), hover_bg_color=QColor(199, 199, 199),
 	             press_bg_color=QColor(179, 179, 179)):
 		if parent is not None:
 			super().__init__("", parent=parent)
